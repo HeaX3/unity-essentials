@@ -1,5 +1,6 @@
 {
     "name": "Essentials",
+    "rootNamespace": "Essentials",
     "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],
