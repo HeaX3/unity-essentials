@@ -1,7 +1,9 @@
 {
     "name": "Essentials",
     "rootNamespace": "Essentials",
-    "references": [],
+    "references": [
+        "UnityEngine.UI"
+    ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
