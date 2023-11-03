@@ -1,0 +1,16 @@
+{
+  "name": "com.heax3.unity-essentials",
+  "version": "1.0.0",
+  "displayName": "Unity Essentials",
+  "description": "This package contains everyday utilities for coding in Unity.",
+  "unity": "2022.3",
+  "unityRelease": "12f1",
+  "documentationUrl": "https://github.com/HeaX3/unity-essentials",
+  "licensesUrl": "https://github.com/HeaX3/unity-essentials/LICENSE",
+  "keywords": [],
+  "author": {
+    "name": "HeaX3",
+    "email": "heax@moonsama.com",
+    "url": "https://www.moonsama.com"
+  }
+}
