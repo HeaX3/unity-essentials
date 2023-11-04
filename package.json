@@ -6,11 +6,11 @@
   "unity": "2022.3",
   "unityRelease": "12f1",
   "documentationUrl": "https://github.com/HeaX3/unity-essentials",
-  "licensesUrl": "https://github.com/HeaX3/unity-essentials/LICENSE",
+  "licensesUrl": "https://github.com/HeaX3/unity-essentials",
   "keywords": [],
   "dependencies": {
-    "com.unity.modules.ui": "1.0.0",
-	"com.unity.nuget.newtonsoft-json": "3.2.1"
+    "com.unity.ugui": "",
+    "com.unity.nuget.newtonsoft-json": "3.2.1"
   },
   "author": {
     "name": "HeaX3",
