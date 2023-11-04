@@ -1,6 +1,6 @@
 ﻿using System;
 using JetBrains.Annotations;
-using Unity.Plastic.Newtonsoft.Json.Linq;
+using Newtonsoft.Json.Linq;
 using UnityEngine;
 
 namespace Essentials
