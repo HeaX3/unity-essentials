@@ -1,7 +1,11 @@
 #if UNITY_EDITOR
-
+using UnityEditor;
+using UnityEditor.UI;
+using UnityEngine;
 using UnityEngine.UI;
 
+namespace Essentials
+{
 #endif
 
 // This is a simple class that combines HorizontalLayoutGroup and VerticalLayoutGroup,
@@ -10,8 +14,6 @@ using UnityEngine.UI;
 // From script we can use the "isVertical" bool property to control the axis.
 // From inspector this bool is controlled by a more convenient "Layout Axis" enum.
 
-namespace UnityEngine.UI
-{
     [AddComponentMenu("Layout/Flex Layout Group", 153)]
     public class FlexLayoutGroup : HorizontalOrVerticalLayoutGroup
     {
@@ -41,12 +43,9 @@ namespace UnityEngine.UI
         public override void SetLayoutHorizontal() => SetChildrenAlongAxis(0, m_IsVertical);
         public override void SetLayoutVertical() => SetChildrenAlongAxis(1, m_IsVertical);
     }
-}
 
 #if UNITY_EDITOR
 
-namespace UnityEditor.UI
-{
     [CustomEditor(typeof(FlexLayoutGroup), true)]
     [CanEditMultipleObjects]
     public class HVLayoutGroupEditor : HorizontalOrVerticalLayoutGroupEditor
@@ -81,6 +80,6 @@ namespace UnityEditor.UI
             base.OnInspectorGUI();
         }
     }
-}
 
 #endif
+}

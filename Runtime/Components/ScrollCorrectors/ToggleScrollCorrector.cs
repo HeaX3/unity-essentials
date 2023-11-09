@@ -2,10 +2,10 @@
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-namespace Essentials.UI
+namespace Essentials
 {
-    [RequireComponent(typeof(Button))]
-    public class ButtonScrollCorrector : AbstractScrollCorrector<Button>
+    [RequireComponent(typeof(Toggle))]
+    public class ToggleScrollCorrector : AbstractScrollCorrector<Toggle>
     {
         protected override void ReleaseTargetInteraction(PointerEventData eventData)
         {

@@ -15,7 +15,7 @@ namespace Essentials.Meshes
         private static readonly List<int[]> indices = new();
         private static readonly List<MeshTopology> topologies = new();
         private static readonly List<Material> materials = new();
-
+        
         public static ICombinableMesh Merge(this Mesh self, params Mesh[] meshes)
         {
             var unityMeshes = new ICombinableMesh[meshes.Length];

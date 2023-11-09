@@ -2,10 +2,10 @@
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-namespace Essentials.UI
+namespace Essentials
 {
-    [RequireComponent(typeof(InputField))]
-    public class InputFieldScrollCorrector : AbstractScrollCorrector<InputField>
+    [RequireComponent(typeof(Button))]
+    public class ButtonScrollCorrector : AbstractScrollCorrector<Button>
     {
         protected override void ReleaseTargetInteraction(PointerEventData eventData)
         {

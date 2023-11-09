@@ -1,5 +1,4 @@
-﻿using Essentials.UI;
-using UnityEditor;
+﻿using UnityEditor;
 using UnityEditor.UI;
 
 namespace Essentials

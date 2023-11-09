@@ -1,9 +1,8 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-namespace Essentials.UI
+namespace Essentials
 {
     public abstract class AbstractScrollCorrector : MonoBehaviour,
         IPointerDownHandler,

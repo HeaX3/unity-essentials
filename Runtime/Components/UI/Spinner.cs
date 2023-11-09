@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Essentials.Components
+namespace Essentials
 {
     public class Spinner : MonoBehaviour
     {

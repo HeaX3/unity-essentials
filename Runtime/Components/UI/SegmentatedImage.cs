@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-namespace Essentials.UI
+namespace Essentials
 {
     public class SegmentatedImage : Image
     {
