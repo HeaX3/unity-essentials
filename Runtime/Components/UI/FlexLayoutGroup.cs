@@ -1,12 +1,12 @@
 #if UNITY_EDITOR
 using UnityEditor;
 using UnityEditor.UI;
+#endif
 using UnityEngine;
 using UnityEngine.UI;
 
 namespace Essentials
 {
-#endif
 
 // This is a simple class that combines HorizontalLayoutGroup and VerticalLayoutGroup,
 // so we can switch between horizontal and vertical layout easily.
