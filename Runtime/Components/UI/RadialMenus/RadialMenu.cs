@@ -11,6 +11,15 @@ namespace Essentials
     {
         [SerializeField] [HideInInspector] private RectTransform _rectTransform;
 
+        private RectTransform rectTransform
+        {
+            get
+            {
+                if (!_rectTransform) _rectTransform = GetComponent<RectTransform>();
+                return _rectTransform;
+            }
+        }
+
         private void OnEnable()
         {
             UpdateLayout();
@@ -23,7 +32,7 @@ namespace Essentials
 
         public void UpdateLayout()
         {
-            var children = _rectTransform.GetChildren().OfType<RectTransform>().ToList();
+            var children = rectTransform.GetChildren().OfType<RectTransform>().ToList();
             for (var i = 0; i < children.Count; i++)
             {
                 var child = children[i];
