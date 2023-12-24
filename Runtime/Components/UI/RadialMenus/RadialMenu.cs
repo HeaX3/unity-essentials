@@ -10,6 +10,8 @@ namespace Essentials
     public class RadialMenu : MonoBehaviour
     {
         [SerializeField] [HideInInspector] private RectTransform _rectTransform;
+        [SerializeField] private float _offsetDegrees;
+        [SerializeField] private int _steps;
 
         private RectTransform rectTransform
         {
@@ -33,10 +35,11 @@ namespace Essentials
         public void UpdateLayout()
         {
             var children = rectTransform.GetChildren().OfType<RectTransform>().ToList();
+            float steps = _steps > 0 ? _steps : children.Count;
             for (var i = 0; i < children.Count; i++)
             {
                 var child = children[i];
-                var position = (0.75f - i / (float)children.Count) * 2 * Mathf.PI;
+                var position = (0.75f - i / steps + _offsetDegrees / 360f) * 2 * Mathf.PI;
                 var x = (Mathf.Cos(position) + 1) / 2;
                 var y = (Mathf.Sin(position) + 1) / 2;
                 child.anchorMin = new Vector2(x, y);
