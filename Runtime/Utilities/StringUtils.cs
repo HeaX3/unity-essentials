@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Text;
 
 namespace Essentials
@@ -47,6 +48,17 @@ namespace Essentials
             }
 
             return builder.ToString();
+        }
+
+        public static string Capitalize(this string s)
+        {
+            return string.Join(" ", string.Join("-", s.Split('-').Select(f => f.Length > 1
+                ? f[..1].ToUpperInvariant() + f[1..]
+                : f.ToUpperInvariant()
+            )).Split(' ').Select(f => f.Length > 1
+                ? f[..1].ToUpperInvariant() + f[1..]
+                : f.ToUpperInvariant()
+            ));
         }
     }
 }
